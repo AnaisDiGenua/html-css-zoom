@@ -13,7 +13,6 @@ i {
 
 
 
-
 /* header */
 header {
     height: 50px;
@@ -72,11 +71,15 @@ main {
 .user-screen-box {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .user-box {
     width: calc(100% / 5 - 4px);
     margin: 2px;
+    background-image: url(../img/user.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
