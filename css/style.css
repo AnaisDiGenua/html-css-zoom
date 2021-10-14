@@ -48,6 +48,15 @@ main {
     height: calc(100vh - 100px);
     background-color: black;
 }
+.swipe-left-box {
+    width: 5%;
+}
+.swipe-right-box {
+    width: 5%;
+}
+.user-screen-box {
+    width: 90%;
+}
 /* COLONNE LATERALI */
 .big-flex-container {
     height: 100%;
@@ -76,29 +85,31 @@ main {
 .user-box {
     width: calc(100% / 5 - 4px);
     margin: 2px;
-    background-image: url(../img/user.svg);
+    background-image: url(../img/user-img.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: lightyellow;
+    position: relative;
 }
-
+.name-microphone {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1px;
+}
+.name-microphone i {
+    font-size: 14px;
+}
+.name-microphone .name-user {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
 
 
 /* *****debug***** */
-.debug .swipe-left-box {
-    width: 5%;
-}
-.debug .swipe-right-box {
-    width: 5%;
-}
-.debug .user-screen-box {
-    width: 90%;
-}
-.debug .user-screen-box {
-    background-color: lightskyblue;
-}
-.debug .user-box {
-    background-color: lightyellow; 
-    border: 1px solid black;
-}
+
+
 
