@@ -37,7 +37,46 @@ header {
 .zoom-btn {
     margin: 0 10px 0 5px;
 }
+.swipe-right-box .active {
+    color: #2ebaff;
+}
+
+
+
+/* main */
+main {
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+.big-flex-container {
+    height: 100%;
+    display: flex;
+}
+.swipe-left-box, .swipe-right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swipe-left-box i, .swipe-right-box i {
+    font-size: 35px;
+    color: lightgray;
+}
+.swipe-left-box span, .swipe-right-box span {
+    font-size: 12px;
+    color: white;
+}
+
 
 
 
 /* *****debug***** */
+.debug .swipe-left-box {
+    width: 5%;
+}
+.debug .swipe-right-box {
+    width: 5%;
+}
+.debug .user-screen-box {
+    width: 90%;
+}
