@@ -1,3 +1,4 @@
+/* commons */
 * {
     margin: 0;
     padding: 0;
@@ -6,3 +7,37 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+i {
+    color: white;
+}
+
+
+
+/* header */
+header {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.view-btn, .zoom-btn {
+    background: linear-gradient(to bottom, #3d3d3d, #242424);
+    border-radius: 3px;
+    padding: 3px 6px;
+}
+.view-btn span {
+    color: lightgray;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.view-btn i, .zoom-btn i {
+    font-size: 14px;
+}
+.zoom-btn {
+    margin: 0 10px 0 5px;
+}
+
+
+
+/* *****debug***** */
