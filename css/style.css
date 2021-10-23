@@ -10,6 +10,13 @@ body {
 i {
     color: white;
 }
+.lime {
+    color: lime;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+
 
 
 
@@ -37,15 +44,12 @@ header {
 .zoom-btn {
     margin: 0 10px 0 5px;
 }
-.swipe-right-box .active {
-    color: #2ebaff;
-}
 
 
 
 /* main */
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 110px);
     background-color: black;
 }
 .swipe-left-box {
@@ -109,47 +113,42 @@ main {
     font-weight: 500;
     color: white;
 }
+.swipe-right-box .active {
+    color: #2ebaff;
+}
 
 
 
 /* footer */
 footer {
-    height: 50px;
+    height: 60px;
     background-color: #1d2021;
 }
 nav {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
 }
-.nav-left, .nav-middle, .nav-right {
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-right {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.nav-left {
-    flex-grow: 0;
-}
-.nav-right {
-    flex-grow: 1;
     background-color: #4a4b4d;
 }
-.nav-middle {
-    flex-grow: 3;
+.nav-right .end-meeting-btn {
+    padding: 20px;
 }
-.icon-box {
-    margin-left: 30px;
+.nav-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
 } 
-.chevron::after {
-    font-family: "Font Awesome 6 Free";
-    content: '\f077';
-    display: inline-block;
-    color: white;
-    font-weight: 900;
-    font-size: 12px;
-    position: relative;
-    left: 30px;
-}  
 .number::after {
     content: "28";
     font-size: 10px;
@@ -160,8 +159,9 @@ nav {
 .icon-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
+    margin: 15px;
 }
 .icon-box span {
     color: white;
@@ -171,27 +171,14 @@ nav {
     font-size: 25px;
     margin-bottom: 2px;
 }
+.icon-chevron i {
+    font-size: 12px;
+}
 .end-meeting-btn {
     color: red;
     font-size: 12px;
     font-weight: 500;
 }
 
-
-
-
-
-/* *****debug***** */
-/* .debug .nav-left {
-    width: 15%;
-    background-color: lightgreen;
-}
-.debug .nav-right {
-    width: 10%; 
-}
-.debug .nav-middle {
-    width: 75%;
-    background-color: lightpink;
-} */
 
 
